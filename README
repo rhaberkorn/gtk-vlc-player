@@ -1,4 +1,26 @@
-For installation (build) instructions refer to ./INSTALL
+Overview
+========
 
-For user documentation and installation instructions
-refer to ./doc/experiment-player.html
+GtkVlcPlayer is an extremely easy to use GTK+ 2.0 widget that
+wraps [libVLC](http://www.videolan.org/vlc/libvlc.html).
+In other words it allows you to easily embed the
+[VLC player](http://www.videolan.org/vlc/) into a GTK+ project.
+
+There is a sample program in `examples/simple.c`.
+It is built with `make check`.
+
+GtkVlcPlayer was originally developed as part of a larger
+project for the Otto-von-Guericke University Magdeburg.
+
+Features
+========
+
+* Simple API (perhaps too simple)
+* Automatically supports fullscreen playback by double-clicking
+  the GtkVlcPlayer widget
+* Supports synchronization with sliders and volume widgets via
+  GtkAdjustments
+* Comes with a [Glade 3](https://glade.gnome.org/) catalog file
+  so you can easily use it in Glade UIs.
+* Runs on Windows (compile with MinGW)
+* Supports a wide range libVLC versions beginning with v1.1.10
