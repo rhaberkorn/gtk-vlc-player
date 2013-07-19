@@ -14,7 +14,7 @@ libgtk_vlc_player_la_LDFLAGS = -no-undefined -shared -bindir @bindir@ \
 
 include_HEADERS = gtk-vlc-player.h
 
-dist_gtk_vlc_player_catalogs_DATA = gtk-vlc-player-catalog.xml
+dist_catalogs_DATA = gtk-vlc-player-catalog.xml
 
 dist_noinst_DATA = cclosure-marshallers.list
 CLEANFILES = $(BUILT_SOURCES)

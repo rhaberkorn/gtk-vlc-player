@@ -19,17 +19,6 @@ Makefile.in
 stamp-*
 
 # Generated
-unit-tests
-gtester-log.xml
-gtester-log.html
-
 cclosure-marshallers.[ch]
 /doc/Doxyfile
 /doc/doxygen
-/doc/experiment-player.html
-/doc/html_titlepage.xsl
-
-/src/experiment-player
-
-# Backup files
-*~
