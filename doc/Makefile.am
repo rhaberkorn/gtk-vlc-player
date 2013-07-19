@@ -2,12 +2,12 @@
 # Doxygen processing
 #
 if BUILD_DOXYGEN
-doc_DATA = doxygen/
+html_DATA = html/
 endif
 
-.PHONY: doxygen/
-doxygen/ : Doxyfile
+.PHONY: html/
+html/ : Doxyfile
 	@DOXYGEN@ $<
 
 clean-local:
-	-rm -rf doxygen/
+	-rm -rf html/
