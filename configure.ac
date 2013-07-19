@@ -42,7 +42,7 @@ AC_CHECK_PROG(DOXYGEN, doxygen, doxygen)
 #
 # Checks for libraries.
 #
-PKG_CHECK_MODULES(LIBGTK, [gtk+-2.0])
+PKG_CHECK_MODULES(LIBGTK, [gtk+-2.0 gthread-2.0])
 
 PKG_CHECK_EXISTS([gladeui-1.0],
 		 [glade3_catalogsdir=`$PKG_CONFIG --variable=catalogdir gladeui-1.0`])
@@ -118,7 +118,7 @@ AC_DEFINE(GTK_VLC_PLAYER_TIME_ADJ_PAGE,	[30000.],	[VLC Player time adjustment pa
 AC_DEFINE(GTK_VLC_PLAYER_VOL_ADJ_STEP,	[0.02],		[VLC Player volume adjustment step increment])
 AC_DEFINE(GTK_VLC_PLAYER_VOL_ADJ_PAGE,	[0.],		[VLC Player volume adjustment page increment])
 
-AC_CONFIG_FILES([Makefile src/Makefile])
+AC_CONFIG_FILES([Makefile src/Makefile examples/Makefile])
 AC_CONFIG_FILES([doc/Makefile doc/Doxyfile])
 
 AC_OUTPUT

@@ -22,3 +22,5 @@ stamp-*
 cclosure-marshallers.[ch]
 /doc/Doxyfile
 /doc/html
+
+/examples/simple
