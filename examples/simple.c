@@ -1,5 +1,4 @@
 /*
- * Copyright (C) 2012-2013 Otto-von-Guericke-Universität Magdeburg
  * Copyright (C) 2013 Robin Haberkorn
  *
  * This program is free software: you can redistribute it and/or modify
