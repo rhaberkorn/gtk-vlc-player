@@ -2,12 +2,20 @@
 # Doxygen processing
 #
 if BUILD_DOXYGEN
-html_DATA = html/
-endif
 
-.PHONY: html/
-html/ : Doxyfile
+EXTRA_DIST = html
+
+all-local : Doxyfile
 	@DOXYGEN@ $<
 
 clean-local:
-	-rm -rf html/
+	-$(RM) -r html/
+
+install-data-local:
+	$(MKDIR_P) $(DESTDIR)$(htmldir)
+	cp -r $(srcdir)/html $(DESTDIR)$(htmldir)
+
+uninstall-local:
+	-$(RM) -r $(DESTDIR)$(htmldir)
+
+endif
